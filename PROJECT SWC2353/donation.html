@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>African Fundraiser</title>
+</head>
+<body class="donation-body">
+
+  <!-- Header -->
+  <header>
+    <a href="homepage.html" class="logo">
+      <div>
+          <h1>African Fundraiser</h1>
+      </div>
+    </a>
+
+    <nav class="navigation">
+      <a href="homepage.html">Home</a>
+      <a href="aboutus.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="donation.html">Donation</a>
+      <a href="media.html">Media</a>
+      <a href="contactus.html">Contact</a>
+      <button class="btnLogin-popup">Login</button>
+    </nav>
+  </header>
+
+  <!-- Login Form Modal -->
+  <div class="wrapper">
+    <span class="icon-close">
+      <ion-icon name="close"></ion-icon>
+    </span>
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock"></ion-icon></span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="login-register">
+          <p>Don't have an account?
+            <a href="#" class="register-link">Register</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-box register">
+      <h2>Registration</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="person"></ion-icon></span>
+          <input type="text" required>
+          <label>Username</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock"></ion-icon></span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">I agree to the terms & conditions</label>
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <div class="login-register">
+          <p>Already have an account?
+            <a href="#" class="login-link">Login</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Main Content -->
+  <main class="donation-main">
+
+    <section class="donation-hero">
+      <h1>Make a Difference Today</h1>
+      <p>Your generosity helps us empower communities and provide essential resources to those in need.</p>
+    </section>
+
+    <section class="donation-tiers">
+      <h2>Be The Change</h2>
+      <p class="donation-description">
+        Your support holds the power to transform lives, build stronger communities, and ignite lasting change. 
+        By contributing to our mission, you provide critical resources such as clean water, education, and healthcare to those who need it the most. 
+        Together, we can create a brighter, more sustainable future for underserved regions in Africa. Choose a donation tier and join us in making a profound impact.
+      </p>
+      <div class="impact-counter">
+        <div class="impact-item">
+          <h3>100+</h3>
+          <p>Communities Supported</p>
+        </div>
+        <div class="impact-item">
+          <h3>5000+</h3>
+          <p>Children Educated</p>
+        </div>
+        <div class="impact-item">
+          <h3>10,000+</h3>
+          <p>Lives Improved</p>
+        </div>
+      </div>
+      <div class="call-to-action">
+        <p>Your donation directly impacts families and communities in Africa. Join our growing community of donors who believe in sustainable change. Together, we can build a brighter future for all.</p>
+        <a href="#donation-form" class="donate-btn" style="background: #007acc; border: 2px solid #fff; padding: 10px 20px; text-decoration: none; border-radius: 5px;">Be a Changemaker</a>
+      </div>
+    </section>
+    
+    <section class="donation-tiers">
+      <p class="intro-text">
+        Every contribution, big or small, has the power to transform lives. 
+        Choose the level of impact you want to make and join us in building a brighter future for communities in need.
+      </p>
+      <div class="tiers-grid">
+        <div class="tier-card">
+          <h3>Community Builder</h3>
+          <p class="donation-amount"><strong>Donate:</strong> RM5 - RM250</p>
+          <p>Provide meals, clean water, and basic supplies to families in need.</p>
+          <a href="#donation-form" class="donate-btn" style="background: #007acc; border: 2px solid #fff;">Donate Now</a>
+        </div>
+        <div class="tier-card">
+          <h3>Education Advocate</h3>
+          <p class="donation-amount"><strong>Donate:</strong> RM260 - RM1000</p>
+          <p>Support the education of children by providing books, school supplies, and scholarships.</p>
+          <a href="#donation-form" class="donate-btn" style="background: #007acc; border: 2px solid #fff;">Donate Now</a>
+        </div>
+        <div class="tier-card">
+          <h3>Changemaker</h3>
+          <p class="donation-amount"><strong>Donate:</strong> RM1000 and above</p>
+          <p>Empower entire communities by funding healthcare, education, and sustainable development projects.</p>
+          <a href="#donation-form" class="donate-btn" style="background: #007acc; border: 2px solid #fff;">Donate Now</a>
+        </div>
+      </div>
+    </section>
+        
+    <!-- Donation Form -->
+    <section id="donation-form" class="donation-form">
+      <h2>Secure Your Donation</h2>
+      <p>Fill out the form below to make your contribution securely.</p>
+      <form id="donationForm">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email Address</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="amount">Donation Amount (MYR)</label>
+          <input type="number" id="amount" name="amount" min="1" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message (Optional)</label>
+          <textarea id="message" name="message" rows="4"></textarea>
+        </div>
+        <button type="button" class="donation-btn-primary" onclick="processDonation()">Donate Now</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 African FundRaiser. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

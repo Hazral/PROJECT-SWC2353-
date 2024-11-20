@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>African Fundraiser</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <a href="homepage.html" class="logo">
+      <div>
+          <h1>African Fundraiser</h1>
+      </div>
+    </a>
+
+
+    <nav class="navigation">
+      <a href="homepage.html">Home</a>
+      <a href="aboutus.html">About</a>
+      <a href="events.html">Events</a>
+      <a href="donation.html">Donation</a>
+      <a href="media.html">Media</a>
+      <a href="contactus.html">Contact</a>
+      <button class="btnLogin-popup">Login</button>
+    </nav>
+  </header>
+
+  <!-- Login Form Modal -->
+  <div class="wrapper">
+    <span class="icon-close">
+      <ion-icon name="close"></ion-icon>
+    </span>
+    <div class="form-box login">
+      <h2>Login</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock"></ion-icon></span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <button type="submit" class="btn">Login</button>
+        <div class="login-register">
+          <p>Don't have an account?
+            <a href="#" class="register-link">Register</a>
+          </p>
+        </div>
+      </form>
+    </div>
+
+    <div class="form-box register">
+      <h2>Registration</h2>
+      <form action="#">
+        <div class="input-box">
+          <span class="icon"><ion-icon name="person"></ion-icon></span>
+          <input type="text" required>
+          <label>Username</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="mail"></ion-icon></span>
+          <input type="email" required>
+          <label>Email</label>
+        </div>
+        <div class="input-box">
+          <span class="icon"><ion-icon name="lock"></ion-icon></span>
+          <input type="password" required>
+          <label>Password</label>
+        </div>
+        <div class="remember-forgot">
+          <label><input type="checkbox">I agree to the terms & conditions</label>
+        </div>
+        <button type="submit" class="btn">Register</button>
+        <div class="login-register">
+          <p>Already have an account?
+            <a href="#" class="login-link">Login</a>
+          </p>
+        </div>
+      </form>
+    </div>
+  </div>
+
+
+  <!-- Main Content -->
+  <main>
+    <section class="events-section">
+      <h2 class="events-title">Upcoming Events</h2>
+      <p class="events-subtitle">Join us in our mission to empower communities in Africa through impactful events in Malaysia.</p>
+      
+      <div class="events-grid">
+
+        <!-- Event 1 -->
+        <div class="event-card">
+          <img src="images/Event1.jpg" alt="Charity Walk" class="event-image">
+          <div class="event-details">
+            <h3>Walk for African Education</h3>
+            <p><strong>Date:</strong> December 10, 2024</p>
+            <p><strong>Location:</strong> Taman Tun Dr Ismail, Kuala Lumpur</p>
+            <p class="event-description">Join us for a charity walk to raise funds for education programs in Africa. Your participation will help provide school supplies, scholarships, and educational infrastructure to children in need across the continent.</p>
+            <button class="btn-primary join-button" onclick="openJoinForm('Walk for African Education')">Join</button>
+          </div>
+        </div>
+
+        <!-- Event 2 -->
+        <div class="event-card">
+          <img src="images/Event2.jpg" alt="Fundraising Gala" class="event-image">
+          <div class="event-details">
+            <h3>Africa Charity Gala</h3>
+            <p><strong>Date:</strong> January 15, 2025</p>
+            <p><strong>Location:</strong> The Ritz-Carlton, Kuala Lumpur</p>
+            <p class="event-description">An exclusive fundraising gala to support health initiatives in Africa. Funds raised will go towards providing medical care, clean water, and sanitation to underserved regions in the African continent.</p>
+            <button class="btn-primary join-button" onclick="openJoinForm('Africa Charity Gala')">Join</button>
+          </div>
+        </div>
+
+        <!-- Event 3 -->
+        <div class="event-card">
+          <img src="images/Event3.jpg" alt="Volunteer Workshop" class="event-image">
+          <div class="event-details">
+            <h3>Volunteer for Africa’s Future</h3>
+            <p><strong>Date:</strong> February 20, 2025</p>
+            <p><strong>Location:</strong> Penang Convention Centre, Penang</p>
+            <p class="event-description">A workshop aimed at educating volunteers about the challenges and opportunities in Africa. Learn how to make a meaningful impact in healthcare, education, and community development projects across Africa.</p>
+            <button class="btn-primary join-button" onclick="openJoinForm('Volunteer for Africa’s Future')">Join</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="events-grid">
+        
+        <!-- Event 4 -->
+        <div class="event-card">
+          <img src="images/Event4.webp" alt="Charity Walk" class="event-image">
+          <div class="event-details">
+            <h3>Walk for African Relief</h3>
+            <p><strong>Date:</strong> March 15, 2025</p>
+            <p><strong>Location:</strong> Lake Gardens, Kuala Lumpur</p>
+            <p class="event-description">Join us in raising awareness and funds for relief efforts in Africa. Your participation will support projects providing food, clean water, and medical aid to communities in crisis.</p>
+            <button class="btn-primary join-button" onclick="openJoinForm('Walk for African Relief')">Join</button>
+          </div>
+        </div>
+      
+        <!-- Event 5 -->
+        <div class="event-card">
+          <img src="images/Event5.jpeg" alt="Fundraising Gala" class="event-image">
+          <div class="event-details">
+            <h3>Gala for Africa’s Healthcare</h3>
+            <p><strong>Date:</strong> April 2, 2025</p>
+            <p><strong>Location:</strong> Mandarin Oriental, Kuala Lumpur</p>
+            <p class="event-description">A luxurious evening of fine dining and entertainment, dedicated to raising funds for healthcare initiatives in Africa. All proceeds will go towards improving medical access and healthcare infrastructure in rural areas.</p>
+            <button class="btn-primary join-button" onclick="openJoinForm('Gala for Africa’s Healthcare')">Join</button>
+          </div>
+        </div>
+      
+        <!-- Event 6 -->
+        <div class="event-card">
+          <img src="images/Event6.jpg" alt="Volunteer Workshop" class="event-image">
+          <div class="event-details">
+            <h3>Empower Africa Through Volunteering</h3>
+            <p><strong>Date:</strong> May 20, 2025</p>
+            <p><strong>Location:</strong> Universiti Malaya, Kuala Lumpur</p>
+            <p class="event-description">This workshop focuses on training volunteers to support initiatives in Africa. Learn about community development, sustainable agriculture, and empowering women and children in African communities.</p>
+            <button class="btn-primary join-button" onclick="openJoinForm('Empower Africa Through Volunteering')">Join</button>
+          </div>
+        </div>
+      </div> 
+
+      <!-- Join Form Modal -->
+      <div id="joinModal" class="modal">
+        <div class="modal-content">
+          <span class="close-btn" onclick="closeJoinForm()">×</span>
+          <h2>Join the Event: <span id="eventName"></span></h2>
+          <form id="joinForm" onsubmit="submitForm(event)">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+
+            <button type="submit" class="btn-primary">Submit</button>
+          </form>
+          <div id="formResponse"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+
+
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>&copy; 2024 African FundRaiser. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+
+</body>
+</html>
